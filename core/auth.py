@@ -11,7 +11,7 @@ from models.user import User, UserRole
 from schemas.user import TokenPayload
 
 # OAuth2 scheme for token authentication
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{settings.API_V1_STR}/auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{settings.API_V1_STR}/auth/token")
 
 
 # Dependency to get current user from token
