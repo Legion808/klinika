@@ -16,10 +16,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
 
     # Database settings
-    DATABASE_URL: str = os.getenv(
-        "DATABASE_URL",
-        "postgresql://postgres:Leg1on808,@localhost:6754/sunnat"
-    )
+    DATABASE_URL = "postgresql://doadmin:AVNS_0TwdierbkVNRnMdhr2-@db-postgresql-syd1-12346-do-user-19185546-0.h.db.ondigitalocean.com:25060/defaultdb?sslmode=require"
 
     # CORS settings
     BACKEND_CORS_ORIGINS: list = ["*"]
